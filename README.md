@@ -5,13 +5,13 @@ A Python wrapper for the Public Steam StoreFront API
 
 1. Install with pip
    ```sh
-   pip/pip3 install steamstore.py
+   pip/pip3 install steamstore
    ```
 
 --- 
 1. Install via setup.py
    ```sh
-   git clone https://github.com/saucesteals/steamstore.py.git
+   git clone https://github.com/saucesteals/steamstore.git
    ```
 2. CD into the directory and install the package
    ```sh

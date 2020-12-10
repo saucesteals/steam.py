@@ -9,14 +9,14 @@ with open('README.md') as f:
     readme = f.read()
 
 setup(
-    name="steamstore.py",
+    name="steamstore",
     version="0.0.1",
     author="Sauce",
     author_email="saucesteals@gmail.com",
     description="A Python wrapper for the Public Steam StoreFront API",
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/saucesteals/steamstore.py",
+    url="https://github.com/saucesteals/steamstore",
     packages=find_packages(exclude=("tests",)),
     classifiers=[
         "Programming Language :: Python :: 3",
