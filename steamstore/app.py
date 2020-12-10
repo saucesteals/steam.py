@@ -142,6 +142,7 @@ class App:
         self.detailed_description = data["detailed_description"]
         self.about_the_game = data["about_the_game"]
         self.short_description = data["short_description"]
+        self.fullgame = data["fullgame"] if "fullgame" in data else None
         self.supported_languages = data["supported_languages"]
         self.reviews = data["reviews"] if "reviews" in data else None
         self.header_image = data["header_image"]
@@ -149,19 +150,20 @@ class App:
         self.pc_requirements = PcRequirements(data=data["pc_requirements"])
         self.mac_requirements = MacRequirements(data=data["mac_requirements"])
         self.linux_requirements = LinuxRequirements(data=data["linux_requirements"])
-        self.developers = data["developers"]
+        self.legal_notice  = data["legal_notice "] if "legal_notice" in data else None
+        self.developers = data["developers"] if "developers" in data else None
         self.publishers = data["publishers"]
         self.demos = [Demo(data=demo) for demo in data["demos"]] if "demos" in data else None
-        self.price_overview = PriceOverview(data=data["price_overview"])
+        self.price_overview = PriceOverview(data=data["price_overview"]) if "price_overview" in data else None
         self.packages = data["packages"]
         self.package_groups = [PackageGroups(data=package_group) for package_group in data["package_groups"]]
         self.platforms = Platforms(data=data["platforms"])
         self.metacritic = Metacritic(data=data["metacritic"]) if "metacritic" in data else None
-        self.categories = [Category(data=category) for category in data["categories"]]
-        self.genres = [Genre(data=genre) for genre in data["genres"]]
-        self.screenshots = [Screenshot(data=screenshot) for screenshot in data["screenshots"]]
+        self.categories = [Category(data=category) for category in data["categories"]] if "categories" in data else None
+        self.genres = [Genre(data=genre) for genre in data["genres"]] if "genres" in data else None
+        self.screenshots = [Screenshot(data=screenshot) for screenshot in data["screenshots"]] if "screenshots" in data else None
         self.movies = [Movie(data=movie) for movie in data["movies"]] if "movies" in data else None
-        self.recommendations = Recommendations(data=data["recommendations"])
+        self.recommendations = Recommendations(data=data["recommendations"]) if "recommendations" in data else None
         self.achievements = Achievements(data=data["achievements"]) if "achievements" in data else None
         self.release_date = ReleaseDate(data=data["release_date"])
         self.support_info = SupportInfo(data=data["support_info"])

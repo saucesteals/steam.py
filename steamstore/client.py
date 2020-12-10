@@ -6,6 +6,7 @@ import aiohttp
 
 from .defaults import *
 from .app import App
+from .featured import FeaturedList
 
 log = logging.getLogger(__name__)
 
@@ -76,3 +77,9 @@ class Client:
         for item in json_resp:
             data = json_resp[item]
             return App(data=data["data"]) if data["success"] else None # TODO: Handle This
+
+    async def get_featured(self, *args, **kwargs):
+
+        req = await self.http.get(self.__build_api("featured"))
+        json_resp = await self.__get_json(req)
+        return FeaturedList(data=json_resp)
