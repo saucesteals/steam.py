@@ -8,7 +8,7 @@ dist-name = "steamstore"
 description-file = "README.md"
 author = "Sauce"
 author-email = "saucesteals@gmail.com"
-home-page = "https://github.com/saucesteals/steamstore.py"
+home-page = "https://github.com/saucesteals/steamstore"
 classifiers = [
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",

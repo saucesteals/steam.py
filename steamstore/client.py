@@ -70,9 +70,9 @@ class Client:
             self.__cleanup()
 
 
-    async def get_app_from_id(self, appid:int, currecy_code:str="us", language_code:str="en"):
+    async def get_app_from_id(self, appid:int, currency_code:str="us", language_code:str="en"):
 
-        req = await self.http.get(self.__build_api("appdetails", {"appids":appid, "cc":currecy_code, "l":language_code}))
+        req = await self.http.get(self.__build_api("appdetails", {"appids":appid, "cc":currency_code, "l":language_code}))
         json_resp = await self.__get_json(req)
         for item in json_resp:
             data = json_resp[item]
