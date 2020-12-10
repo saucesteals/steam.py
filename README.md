@@ -1,2 +1,2 @@
 # steam.py
-Public Steam API wrapper for Python!
+A Python wrapper for the Public Steam StoreFront API
