@@ -150,7 +150,7 @@ class App:
         self.pc_requirements = PcRequirements(data=data["pc_requirements"])
         self.mac_requirements = MacRequirements(data=data["mac_requirements"])
         self.linux_requirements = LinuxRequirements(data=data["linux_requirements"])
-        self.legal_notice  = data["legal_notice "] if "legal_notice" in data else None
+        self.legal_notice  = data["legal_notice"] if "legal_notice" in data else None
         self.developers = data["developers"] if "developers" in data else None
         self.publishers = data["publishers"]
         self.demos = [Demo(data=demo) for demo in data["demos"]] if "demos" in data else None
