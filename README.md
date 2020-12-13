@@ -3,7 +3,7 @@ A Python wrapper for the Public Steam StoreFront API
 
 ### Documentation
 
- - [https://saucesteals.github.io/steamstore/](https://saucesteals.github.io/steamstore/app.html)
+ - [https://saucesteals.github.io/steamstore/](https://saucesteals.github.io/steamstore/)
 
 ### Installation
 
