@@ -1,5 +1,9 @@
-## steamstore.py
+# steamstore.py
 A Python wrapper for the Public Steam StoreFront API
+
+### Documentation
+
+ - [https://saucesteals.github.io/steamstore/](https://saucesteals.github.io/steamstore/app.html)
 
 ### Installation
 
@@ -17,9 +21,6 @@ A Python wrapper for the Public Steam StoreFront API
    ```sh
    python/python3 setup.py
    ```
-
-
-
 
 ## Contributing
 

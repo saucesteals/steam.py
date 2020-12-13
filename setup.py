@@ -10,7 +10,7 @@ with open('README.md') as f:
 
 setup(
     name="steamstore",
-    version="0.0.4",
+    version="0.0.5",
     author="Sauce",
     author_email="saucesteals@gmail.com",
     description="A Python wrapper for the Public Steam StoreFront API",
